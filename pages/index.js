@@ -5,14 +5,14 @@ export default function Home() {
     <>
       <Head>
         <title>راية المزادات - Rayat Almazadat</title>
-        <meta name="description" content="شركة راية المزادات للمزادات العقارية في السعودية" />
+        <meta name="description" content="شركة راية المزادات " />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main style={{ textAlign: 'center', fontFamily: 'Tahoma', padding: '2rem', backgroundColor: '#f5f5f5' }}>
         <h1>راية المزادات</h1>
         <h2>Rayat Almazadat</h2>
         <p style={{ fontSize: '18px', maxWidth: '600px', margin: '0 auto' }}>
-          نقدّم خدمات المزاد العقاري والوساطة داخل المملكة العربية السعودية. نساعد العملاء والمستثمرين على شراء وبيع العقارات بثقة ومصداقية.
+          شركة مزادات سعودية مُرخَّصة متخصصة في مزادات العقارات والمنقولات والمركبات وكافة الأصول الأخرى.
         </p>
         <a href="https://wa.me/966530508091" style={{
           display: 'inline-block',
