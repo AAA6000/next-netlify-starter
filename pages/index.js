@@ -4,166 +4,153 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>راية المزادات | Rayat Almazadat</title>
-        <meta name="description" content="Licensed Saudi auction company for real estate, vehicles, and assets." />
+        <title>راية المزادات - Rayat Almazadat</title>
+        <meta name="description" content="شركة راية المزادات" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <div className="page">
+      {/* HEADER */}
+      <header style={{
+        backgroundColor: '#1f4354',
+        padding: '1rem 2rem',
+        display: 'flex',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        color: '#fff',
+        flexWrap: 'wrap'
+      }}>
+        <div style={{ fontSize: '20px', fontWeight: 'bold', direction: 'rtl' }}>
+          راية المزادات<br />
+          <span style={{ fontSize: '14px', color: '#ccc' }}>Rayat Almazadat</span>
+        </div>
+        <img
+          src="/logo.png"
+          alt="راية المزادات Logo"
+          style={{ maxWidth: '160px', height: 'auto' }}
+        />
+      </header>
 
-        {/* HEADER */}
-        <header className="header">
-          <div className="container header-inner">
-            <img src="/logo.png" alt="Logo" className="logo" />
-            <div className="company">
-              <h1>راية المزادات</h1>
-              <p>Rayat Almazadat</p>
-            </div>
+      {/* MAIN CONTENT */}
+      <main style={{
+        fontFamily: 'Tahoma, sans-serif',
+        backgroundColor: '#f9f9f9',
+        padding: '3rem 1rem',
+        textAlign: 'center'
+      }}>
+
+        {/* CR Box (shared by both languages) */}
+        <div style={{
+          backgroundColor: '#ffffff',
+          display: 'inline-block',
+          padding: '1rem 2rem',
+          borderRadius: '8px',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
+          fontSize: '16px',
+          marginBottom: '30px'
+        }}>
+          <strong>شهادة السجل التجاري</strong><br />
+          الرقم الوطني الموحد: 7050707897
+        </div>
+
+        {/* TWO COLUMNS */}
+        <div style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          gap: '4rem',
+          marginTop: '2rem',
+          maxWidth: '1200px',
+          marginLeft: 'auto',
+          marginRight: 'auto'
+        }}>
+
+          {/* Arabic Section */}
+          <div style={{
+            width: '300px',
+            textAlign: 'right',
+            direction: 'rtl',
+            backgroundColor: '#fff',
+            padding: '2rem',
+            borderRadius: '12px',
+            boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
+          }}>
+            <h2>عن الشركة</h2>
+            <p>
+              شركة راية المزادات هي شركة سعودية مُرخَّصة تقدم خدمات المزادات للعقارات، والمركبات، والمنقولات، وجميع الأصول الأخرى.
+            </p>
+            <p>
+              نلتزم بالشفافية والمصداقية ونوفّر بيئة آمنة للمشترين والبائعين في المملكة.
+            </p>
           </div>
-        </header>
 
-        {/* MAIN GRID */}
-        <main className="container grid">
-          <section className="block ar">
-            <h3>من نحن</h3>
-            <p>شركة سعودية مرخّصة للمزادات العقارية والمركبات والأصول التجارية.</p>
-          </section>
+          {/* English Section */}
+          <div style={{
+            width: '300px',
+            textAlign: 'left',
+            direction: 'ltr',
+            backgroundColor: '#fff',
+            padding: '2rem',
+            borderRadius: '12px',
+            boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
+          }}>
+            <h2>About Us</h2>
+            <p>
+              Rayat Almazadat is a licensed Saudi auction company offering property, vehicle, and asset auction services.
+            </p>
+            <p>
+              We are committed to transparency, trust, and providing a secure marketplace for both buyers and sellers across the Kingdom.
+            </p>
+          </div>
+        </div>
 
-          <section className="block en">
-            <h3>About Us</h3>
-            <p>Licensed auction house for property, vehicles, and commercial liquidation.</p>
-          </section>
+        {/* WhatsApp Button */}
+        <a
+          href="https://wa.me/966530508091"
+          style={{
+            display: 'inline-block',
+            marginTop: '2.5rem',
+            padding: '12px 30px',
+            backgroundColor: '#0a9396',
+            color: 'white',
+            fontSize: '16px',
+            borderRadius: '6px',
+            textDecoration: 'none',
+            transition: 'background 0.3s'
+          }}
+          onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#087f81'}
+          onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0a9396'}
+        >
+          تواصل معنا على واتساب
+        </a>
 
-          <section className="block stats">
-            <div>
-              <h4>25+</h4>
-              <p>Years</p>
-            </div>
-            <div>
-              <h4>12K</h4>
-              <p>Lots Sold</p>
-            </div>
-            <div>
-              <h4>7B SAR</h4>
-              <p>Value</p>
-            </div>
-          </section>
+        {/* Bottom CR Info */}
+        <div style={{
+          backgroundColor: '#ffffff',
+          display: 'inline-block',
+          padding: '1rem 2rem',
+          borderRadius: '8px',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
+          fontSize: '16px',
+          marginTop: '60px'
+        }}>
+          <strong>شهادة السجل التجاري</strong><br />
+          الرقم الوطني الموحد: 7050707897
+        </div>
+      </main>
 
-          <section className="block cr">
-            <p><strong>شهادة السجل التجاري</strong></p>
-            <p>الرقم الوطني الموحد: 7050707897</p>
-          </section>
-
-          <section className="block action">
-            <a href="https://wa.me/966530508091">تواصل معنا على واتساب</a>
-          </section>
-        </main>
-
-        {/* FOOTER */}
-        <footer className="footer">
-          <p>© 2025 راية المزادات | Rayat Almazadat</p>
-          <p>Dammam · +966 530 508 091</p>
-        </footer>
-      </div>
-
-      <style jsx>{`
-        body, html {
-          margin: 0;
-          font-family: Tahoma, sans-serif;
-          background: #f5f5f5;
-          color: #1e1e1e;
-        }
-        .page {
-          min-height: 100vh;
-          display: flex;
-          flex-direction: column;
-        }
-        .container {
-          width: 90%;
-          max-width: 1100px;
-          margin: 0 auto;
-        }
-        .header {
-          background: #193c50;
-          color: white;
-          padding: 0.75rem 0;
-        }
-        .header-inner {
-          display: flex;
-          align-items: center;
-          justify-content: flex-start;
-          gap: 1rem;
-        }
-        .logo {
-          height: 50px;
-          width: auto;
-        }
-        .company h1 {
-          margin: 0;
-          font-size: 1.5rem;
-        }
-        .company p {
-          margin: 0;
-          font-size: 0.9rem;
-          color: #cbd8df;
-        }
-
-        .grid {
-          display: grid;
-          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-          gap: 1rem;
-          padding: 1.5rem 0.5rem;
-        }
-        .block {
-          background: white;
-          border-radius: 8px;
-          padding: 1rem;
-          box-shadow: 0 1px 4px rgba(0,0,0,0.05);
-          text-align: center;
-        }
-        .block h3, .block h4 {
-          margin: 0 0 0.5rem;
-          color: #193c50;
-        }
-        .block p {
-          margin: 0;
-          font-size: 0.9rem;
-        }
-
-        .stats {
-          display: flex;
-          justify-content: center;
-          gap: 0.75rem;
-        }
-        .stats div h4 {
-          font-size: 1.2rem;
-          margin: 0;
-        }
-        .stats div p {
-          margin: 0;
-          font-size: 0.75rem;
-        }
-
-        .action a {
-          display: inline-block;
-          margin-top: 0.5rem;
-          padding: 8px 16px;
-          background: #0a9396;
-          color: white;
-          text-decoration: none;
-          border-radius: 6px;
-          font-weight: bold;
-        }
-
-        .footer {
-          background: #193c50;
-          color: white;
-          text-align: center;
-          font-size: 0.85rem;
-          padding: 1rem 0.5rem;
-          margin-top: auto;
-        }
-      `}</style>
+      {/* FOOTER */}
+      <footer style={{
+        backgroundColor: '#1f4354',
+        color: '#ffffff',
+        textAlign: 'center',
+        padding: '1.2rem',
+        fontSize: '14px',
+        lineHeight: '1.6'
+      }}>
+        © 2025 راية المزادات - Rayat Almazadat<br />
+        الدمام، شارع الملك عبدالعزيز، السعودية | Dammam, King Abdulaziz St, Saudi Arabia<br />
+        +966 530 508 091
+      </footer>
     </>
   );
 }
