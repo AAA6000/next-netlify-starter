@@ -16,9 +16,10 @@ export default function Home() {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        color: '#fff'
+        color: '#fff',
+        flexWrap: 'wrap'
       }}>
-        <div style={{ fontSize: '20px', fontWeight: 'bold' }}>
+        <div style={{ fontSize: '20px', fontWeight: 'bold', direction: 'rtl' }}>
           راية المزادات<br />
           <span style={{ fontSize: '14px', color: '#ccc' }}>Rayat Almazadat</span>
         </div>
@@ -37,7 +38,7 @@ export default function Home() {
         textAlign: 'center'
       }}>
 
-        {/* CR Info Top */}
+        {/* CR Box (shared by both languages) */}
         <div style={{
           backgroundColor: '#ffffff',
           display: 'inline-block',
@@ -51,16 +52,63 @@ export default function Home() {
           الرقم الوطني الموحد: 7050707897
         </div>
 
-        <h1 style={{ fontSize: '2rem', margin: '1rem 0' }}>شركة راية المزادات</h1>
-        <p style={{ fontSize: '18px', maxWidth: '600px', margin: '0 auto', color: '#444' }}>
-          شركة مزادات سعودية مُرخَّصة متخصصة في مزادات العقارات والمنقولات والمركبات وكافة الأصول الأخرى.
-        </p>
+        {/* TWO COLUMNS */}
+        <div style={{
+          display: 'flex',
+          flexWrap: 'wrap',
+          justifyContent: 'center',
+          gap: '4rem',
+          marginTop: '2rem',
+          maxWidth: '1200px',
+          marginLeft: 'auto',
+          marginRight: 'auto'
+        }}>
 
+          {/* Arabic Section */}
+          <div style={{
+            width: '300px',
+            textAlign: 'right',
+            direction: 'rtl',
+            backgroundColor: '#fff',
+            padding: '2rem',
+            borderRadius: '12px',
+            boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
+          }}>
+            <h2>عن الشركة</h2>
+            <p>
+              شركة راية المزادات هي شركة سعودية مُرخَّصة تقدم خدمات المزادات للعقارات، والمركبات، والمنقولات، وجميع الأصول الأخرى.
+            </p>
+            <p>
+              نلتزم بالشفافية والمصداقية ونوفّر بيئة آمنة للمشترين والبائعين في المملكة.
+            </p>
+          </div>
+
+          {/* English Section */}
+          <div style={{
+            width: '300px',
+            textAlign: 'left',
+            direction: 'ltr',
+            backgroundColor: '#fff',
+            padding: '2rem',
+            borderRadius: '12px',
+            boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
+          }}>
+            <h2>About Us</h2>
+            <p>
+              Rayat Almazadat is a licensed Saudi auction company offering property, vehicle, and asset auction services.
+            </p>
+            <p>
+              We are committed to transparency, trust, and providing a secure marketplace for both buyers and sellers across the Kingdom.
+            </p>
+          </div>
+        </div>
+
+        {/* WhatsApp Button */}
         <a
           href="https://wa.me/966530508091"
           style={{
             display: 'inline-block',
-            marginTop: '2rem',
+            marginTop: '2.5rem',
             padding: '12px 30px',
             backgroundColor: '#0a9396',
             color: 'white',
@@ -75,7 +123,7 @@ export default function Home() {
           تواصل معنا على واتساب
         </a>
 
-        {/* CR Info Bottom */}
+        {/* Bottom CR Info */}
         <div style={{
           backgroundColor: '#ffffff',
           display: 'inline-block',
@@ -95,11 +143,12 @@ export default function Home() {
         backgroundColor: '#1f4354',
         color: '#ffffff',
         textAlign: 'center',
-        padding: '1rem',
-        fontSize: '14px'
+        padding: '1.2rem',
+        fontSize: '14px',
+        lineHeight: '1.6'
       }}>
         © 2025 راية المزادات - Rayat Almazadat<br />
-        الدمام، شارع الملك عبدالعزيز، السعودية<br />
+        الدمام، شارع الملك عبدالعزيز، السعودية | Dammam, King Abdulaziz St, Saudi Arabia<br />
         +966 530 508 091
       </footer>
     </>
