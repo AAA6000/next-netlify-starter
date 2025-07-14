@@ -12,21 +12,22 @@ export default function Home() {
       {/* HEADER */}
       <header style={{
         backgroundColor: '#1f4354',
-        padding: '1rem 2rem',
+        padding: '0.8rem 2rem',
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
         color: '#fff',
-        flexWrap: 'wrap'
+        flexWrap: 'wrap',
+        minHeight: '80px'
       }}>
-        <div style={{ fontSize: '20px', fontWeight: 'bold', direction: 'rtl' }}>
+        <div style={{ fontSize: '20px', fontWeight: 'bold', direction: 'rtl', lineHeight: '1.4' }}>
           راية المزادات<br />
           <span style={{ fontSize: '14px', color: '#ccc' }}>Rayat Almazadat</span>
         </div>
         <img
           src="/logo.png"
           alt="راية المزادات Logo"
-          style={{ maxWidth: '160px', height: 'auto' }}
+          style={{ maxWidth: '140px', height: 'auto' }}
         />
       </header>
 
@@ -34,19 +35,19 @@ export default function Home() {
       <main style={{
         fontFamily: 'Tahoma, sans-serif',
         backgroundColor: '#f9f9f9',
-        padding: '3rem 1rem',
+        padding: '2rem 1rem',
         textAlign: 'center'
       }}>
 
-        {/* CR Box (shared by both languages) */}
+        {/* CR Box (Top) */}
         <div style={{
           backgroundColor: '#ffffff',
           display: 'inline-block',
-          padding: '1rem 2rem',
+          padding: '0.75rem 1.5rem',
           borderRadius: '8px',
           boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
-          fontSize: '16px',
-          marginBottom: '30px'
+          fontSize: '15px',
+          marginBottom: '20px'
         }}>
           <strong>شهادة السجل التجاري</strong><br />
           الرقم الوطني الموحد: 7050707897
@@ -57,9 +58,9 @@ export default function Home() {
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
-          gap: '4rem',
-          marginTop: '2rem',
-          maxWidth: '1200px',
+          gap: '2rem',
+          marginTop: '1rem',
+          maxWidth: '1100px',
           marginLeft: 'auto',
           marginRight: 'auto'
         }}>
@@ -70,13 +71,14 @@ export default function Home() {
             textAlign: 'right',
             direction: 'rtl',
             backgroundColor: '#fff',
-            padding: '2rem',
+            padding: '1.2rem',
             borderRadius: '12px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
+            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
+            fontSize: '14.5px'
           }}>
-            <h2>عن الشركة</h2>
+            <h2 style={{ fontSize: '1.2rem', color: '#1f4354' }}>عن الشركة</h2>
             <p>
-              شركة راية المزادات هي شركة سعودية مُرخَّصة تقدم خدمات المزادات للعقارات، والمركبات، والمنقولات، وجميع الأصول الأخرى.
+              راية المزادات شركة سعودية مُرخَّصة تقدم خدمات المزادات للعقارات، والمركبات، والمنقولات، وجميع الأصول الأخرى.
             </p>
             <p>
               نلتزم بالشفافية والمصداقية ونوفّر بيئة آمنة للمشترين والبائعين في المملكة.
@@ -89,11 +91,12 @@ export default function Home() {
             textAlign: 'left',
             direction: 'ltr',
             backgroundColor: '#fff',
-            padding: '2rem',
+            padding: '1.2rem',
             borderRadius: '12px',
-            boxShadow: '0 2px 10px rgba(0,0,0,0.05)'
+            boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
+            fontSize: '14.5px'
           }}>
-            <h2>About Us</h2>
+            <h2 style={{ fontSize: '1.2rem', color: '#1f4354' }}>About Us</h2>
             <p>
               Rayat Almazadat is a licensed Saudi auction company offering property, vehicle, and asset auction services.
             </p>
@@ -108,17 +111,15 @@ export default function Home() {
           href="https://wa.me/966530508091"
           style={{
             display: 'inline-block',
-            marginTop: '2.5rem',
-            padding: '12px 30px',
+            marginTop: '2rem',
+            padding: '10px 24px',
             backgroundColor: '#0a9396',
             color: 'white',
-            fontSize: '16px',
+            fontSize: '15px',
             borderRadius: '6px',
             textDecoration: 'none',
-            transition: 'background 0.3s'
+            fontWeight: 'bold'
           }}
-          onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#087f81'}
-          onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0a9396'}
         >
           تواصل معنا على واتساب
         </a>
@@ -127,11 +128,11 @@ export default function Home() {
         <div style={{
           backgroundColor: '#ffffff',
           display: 'inline-block',
-          padding: '1rem 2rem',
+          padding: '0.75rem 1.5rem',
           borderRadius: '8px',
           boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
-          fontSize: '16px',
-          marginTop: '60px'
+          fontSize: '15px',
+          marginTop: '40px'
         }}>
           <strong>شهادة السجل التجاري</strong><br />
           الرقم الوطني الموحد: 7050707897
@@ -143,8 +144,8 @@ export default function Home() {
         backgroundColor: '#1f4354',
         color: '#ffffff',
         textAlign: 'center',
-        padding: '1.2rem',
-        fontSize: '14px',
+        padding: '1rem',
+        fontSize: '13px',
         lineHeight: '1.6'
       }}>
         © 2025 راية المزادات - Rayat Almazadat<br />
