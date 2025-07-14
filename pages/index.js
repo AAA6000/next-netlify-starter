@@ -39,30 +39,14 @@ export default function Home() {
         textAlign: 'center'
       }}>
 
-        {/* CR Box (Top) */}
-        <div style={{
-          backgroundColor: '#ffffff',
-          display: 'inline-block',
-          padding: '0.75rem 1.5rem',
-          borderRadius: '8px',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
-          fontSize: '15px',
-          marginBottom: '20px'
-        }}>
-          <strong>شهادة السجل التجاري</strong><br />
-          الرقم الوطني الموحد: 7050707897
-        </div>
-
         {/* TWO COLUMNS */}
         <div style={{
           display: 'flex',
           flexWrap: 'wrap',
           justifyContent: 'center',
           gap: '2rem',
-          marginTop: '1rem',
           maxWidth: '1100px',
-          marginLeft: 'auto',
-          marginRight: 'auto'
+          margin: '0 auto'
         }}>
 
           {/* Arabic Section */}
@@ -82,6 +66,11 @@ export default function Home() {
             </p>
             <p>
               نلتزم بالشفافية والمصداقية ونوفّر بيئة آمنة للمشترين والبائعين في المملكة.
+            </p>
+            <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid #eee' }} />
+            <p style={{ fontSize: '13px', color: '#444' }}>
+              <strong>شهادة السجل التجاري</strong><br />
+              الرقم الوطني الموحد: 7050707897
             </p>
           </div>
 
@@ -103,6 +92,11 @@ export default function Home() {
             <p>
               We are committed to transparency, trust, and providing a secure marketplace for both buyers and sellers across the Kingdom.
             </p>
+            <hr style={{ margin: '1rem 0', border: 'none', borderTop: '1px solid #eee' }} />
+            <p style={{ fontSize: '13px', color: '#444' }}>
+              <strong>Commercial Registration</strong><br />
+              Unified National Number: 7050707897
+            </p>
           </div>
         </div>
 
@@ -111,7 +105,7 @@ export default function Home() {
           href="https://wa.me/966530508091"
           style={{
             display: 'inline-block',
-            marginTop: '2rem',
+            marginTop: '2.5rem',
             padding: '10px 24px',
             backgroundColor: '#0a9396',
             color: 'white',
@@ -123,20 +117,6 @@ export default function Home() {
         >
           تواصل معنا على واتساب
         </a>
-
-        {/* Bottom CR Info */}
-        <div style={{
-          backgroundColor: '#ffffff',
-          display: 'inline-block',
-          padding: '0.75rem 1.5rem',
-          borderRadius: '8px',
-          boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
-          fontSize: '15px',
-          marginTop: '40px'
-        }}>
-          <strong>شهادة السجل التجاري</strong><br />
-          الرقم الوطني الموحد: 7050707897
-        </div>
       </main>
 
       {/* FOOTER */}
