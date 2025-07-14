@@ -9,38 +9,50 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      {/* HEADER with logo and dark background */}
+      {/* HEADER */}
       <header style={{
         backgroundColor: '#1f4354',
         padding: '1rem 2rem',
         display: 'flex',
-        justifyContent: 'flex-end',
-        alignItems: 'center'
+        justifyContent: 'space-between',
+        alignItems: 'center',
+        color: '#fff'
       }}>
+        <div style={{ fontSize: '20px', fontWeight: 'bold' }}>
+          راية المزادات<br />
+          <span style={{ fontSize: '14px', color: '#ccc' }}>Rayat Almazadat</span>
+        </div>
         <img
           src="/logo.png"
-          alt="راية المزادات"
-          style={{ maxWidth: '180px', height: 'auto' }}
+          alt="راية المزادات Logo"
+          style={{ maxWidth: '160px', height: 'auto' }}
         />
       </header>
 
       {/* MAIN CONTENT */}
       <main style={{
-        textAlign: 'center',
-        fontFamily: 'Tahoma',
-        padding: '2rem',
-        backgroundColor: '#f5f5f5'
+        fontFamily: 'Tahoma, sans-serif',
+        backgroundColor: '#f9f9f9',
+        padding: '3rem 1rem',
+        textAlign: 'center'
       }}>
-        <h1>راية المزادات</h1>
-        <h2>Rayat Almazadat</h2>
 
-        {/* CR info (top) */}
-        <div style={{ marginTop: '20px', fontSize: '16px', color: '#333' }}>
+        {/* CR Info Top */}
+        <div style={{
+          backgroundColor: '#ffffff',
+          display: 'inline-block',
+          padding: '1rem 2rem',
+          borderRadius: '8px',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
+          fontSize: '16px',
+          marginBottom: '30px'
+        }}>
           <strong>شهادة السجل التجاري</strong><br />
           الرقم الوطني الموحد: 7050707897
         </div>
 
-        <p style={{ fontSize: '18px', maxWidth: '600px', margin: '30px auto 0' }}>
+        <h1 style={{ fontSize: '2rem', margin: '1rem 0' }}>شركة راية المزادات</h1>
+        <p style={{ fontSize: '18px', maxWidth: '600px', margin: '0 auto', color: '#444' }}>
           شركة مزادات سعودية مُرخَّصة متخصصة في مزادات العقارات والمنقولات والمركبات وكافة الأصول الأخرى.
         </p>
 
@@ -48,30 +60,48 @@ export default function Home() {
           href="https://wa.me/966530508091"
           style={{
             display: 'inline-block',
-            padding: '12px 24px',
+            marginTop: '2rem',
+            padding: '12px 30px',
             backgroundColor: '#0a9396',
             color: 'white',
-            borderRadius: '8px',
-            marginTop: '30px',
+            fontSize: '16px',
+            borderRadius: '6px',
             textDecoration: 'none',
-            fontSize: '16px'
+            transition: 'background 0.3s'
           }}
+          onMouseOver={(e) => e.currentTarget.style.backgroundColor = '#087f81'}
+          onMouseOut={(e) => e.currentTarget.style.backgroundColor = '#0a9396'}
         >
           تواصل معنا على واتساب
         </a>
 
-        {/* CR info (bottom) */}
-        <div style={{ marginTop: '60px', fontSize: '16px', color: '#333' }}>
+        {/* CR Info Bottom */}
+        <div style={{
+          backgroundColor: '#ffffff',
+          display: 'inline-block',
+          padding: '1rem 2rem',
+          borderRadius: '8px',
+          boxShadow: '0 2px 8px rgba(0,0,0,0.05)',
+          fontSize: '16px',
+          marginTop: '60px'
+        }}>
           <strong>شهادة السجل التجاري</strong><br />
           الرقم الوطني الموحد: 7050707897
         </div>
-
-        <footer style={{ marginTop: '30px', fontSize: '14px', color: '#666' }}>
-          © 2025 راية المزادات - Rayat Almazadat<br />
-          الدمام، شارع الملك عبدالعزيز، السعودية<br />
-          +966 530 508 091
-        </footer>
       </main>
+
+      {/* FOOTER */}
+      <footer style={{
+        backgroundColor: '#1f4354',
+        color: '#ffffff',
+        textAlign: 'center',
+        padding: '1rem',
+        fontSize: '14px'
+      }}>
+        © 2025 راية المزادات - Rayat Almazadat<br />
+        الدمام، شارع الملك عبدالعزيز، السعودية<br />
+        +966 530 508 091
+      </footer>
     </>
   );
 }
