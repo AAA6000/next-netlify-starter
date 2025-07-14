@@ -15,27 +15,23 @@ export default function Home() {
         <header className="header">
           <div className="container header-inner">
             <img src="/logo.png" alt="Logo" className="logo" />
-            <div className="company-name">
+            <div className="company">
               <h1>راية المزادات</h1>
               <p>Rayat Almazadat</p>
             </div>
           </div>
         </header>
 
-        {/* COMPACT GRID */}
+        {/* MAIN GRID */}
         <main className="container grid">
           <section className="block ar">
             <h3>من نحن</h3>
-            <p>
-              شركة سعودية مرخّصة تقدم خدمات المزادات للعقارات والمركبات والمنقولات بأعلى درجات الشفافية.
-            </p>
+            <p>شركة سعودية مرخّصة للمزادات العقارية والمركبات والأصول التجارية.</p>
           </section>
 
           <section className="block en">
             <h3>About Us</h3>
-            <p>
-              Licensed auction house specializing in real estate, vehicle, and asset sales across Saudi Arabia.
-            </p>
+            <p>Licensed auction house for property, vehicles, and commercial liquidation.</p>
           </section>
 
           <section className="block stats">
@@ -65,10 +61,8 @@ export default function Home() {
 
         {/* FOOTER */}
         <footer className="footer">
-          <div className="container">
-            <p>© 2025 راية المزادات | Rayat Almazadat</p>
-            <p>Dammam · +966 530 508 091</p>
-          </div>
+          <p>© 2025 راية المزادات | Rayat Almazadat</p>
+          <p>Dammam · +966 530 508 091</p>
         </footer>
       </div>
 
@@ -92,21 +86,23 @@ export default function Home() {
         .header {
           background: #193c50;
           color: white;
-          padding: 0.5rem 0;
+          padding: 0.75rem 0;
         }
         .header-inner {
           display: flex;
           align-items: center;
-          justify-content: space-between;
+          justify-content: flex-start;
+          gap: 1rem;
         }
         .logo {
-          height: 45px;
+          height: 50px;
+          width: auto;
         }
-        .company-name h1 {
+        .company h1 {
           margin: 0;
-          font-size: 1.3rem;
+          font-size: 1.5rem;
         }
-        .company-name p {
+        .company p {
           margin: 0;
           font-size: 0.9rem;
           color: #cbd8df;
@@ -116,7 +112,7 @@ export default function Home() {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
           gap: 1rem;
-          padding: 1rem 0.5rem;
+          padding: 1.5rem 0.5rem;
         }
         .block {
           background: white;
@@ -133,19 +129,21 @@ export default function Home() {
           margin: 0;
           font-size: 0.9rem;
         }
+
         .stats {
           display: flex;
-          justify-content: space-around;
-          gap: 0.5rem;
+          justify-content: center;
+          gap: 0.75rem;
         }
         .stats div h4 {
-          font-size: 1.3rem;
+          font-size: 1.2rem;
           margin: 0;
         }
         .stats div p {
           margin: 0;
-          font-size: 0.8rem;
+          font-size: 0.75rem;
         }
+
         .action a {
           display: inline-block;
           margin-top: 0.5rem;
@@ -156,6 +154,7 @@ export default function Home() {
           border-radius: 6px;
           font-weight: bold;
         }
+
         .footer {
           background: #193c50;
           color: white;
@@ -163,16 +162,6 @@ export default function Home() {
           font-size: 0.85rem;
           padding: 1rem 0.5rem;
           margin-top: auto;
-        }
-
-        @media (max-height: 800px) {
-          .block, .header, .footer {
-            padding: 0.5rem !important;
-          }
-          .action a {
-            font-size: 0.85rem;
-            padding: 6px 12px;
-          }
         }
       `}</style>
     </>
