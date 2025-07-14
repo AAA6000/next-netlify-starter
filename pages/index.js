@@ -11,7 +11,7 @@ export default function Home() {
 
       {/* HEADER */}
       <header style={{
-        backgroundColor: '#1f4354',
+        backgroundColor: '#193c50',
         padding: '1rem 2rem',
         display: 'flex',
         justifyContent: 'space-between',
@@ -38,7 +38,7 @@ export default function Home() {
         textAlign: 'center'
       }}>
 
-        {/* CR Box (shared by both languages) */}
+        {/* CR Info (Top) */}
         <div style={{
           backgroundColor: '#ffffff',
           display: 'inline-block',
@@ -52,7 +52,7 @@ export default function Home() {
           الرقم الوطني الموحد: 7050707897
         </div>
 
-        {/* TWO COLUMNS */}
+        {/* Two Columns (AR + EN) */}
         <div style={{
           display: 'flex',
           flexWrap: 'wrap',
@@ -123,7 +123,7 @@ export default function Home() {
           تواصل معنا على واتساب
         </a>
 
-        {/* Bottom CR Info */}
+        {/* CR Info (Bottom) */}
         <div style={{
           backgroundColor: '#ffffff',
           display: 'inline-block',
@@ -140,7 +140,7 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer style={{
-        backgroundColor: '#1f4354',
+        backgroundColor: '#193c50',
         color: '#ffffff',
         textAlign: 'center',
         padding: '1.2rem',
