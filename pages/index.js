@@ -5,13 +5,13 @@ export default function Home() {
     <>
       <Head>
         <title>راية المزادات | Rayat Almazadat</title>
-        <meta name="description" content="Licensed Saudi auction company for real estate, vehicles, and high-value assets." />
+        <meta name="description" content="Licensed Saudi auction company for real estate, vehicles, and assets." />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
       <div className="page">
 
-        {/* Header */}
+        {/* HEADER */}
         <header className="header">
           <div className="container header-inner">
             <img src="/logo.png" alt="Logo" className="logo" />
@@ -22,96 +22,77 @@ export default function Home() {
           </div>
         </header>
 
-        {/* Hero */}
-        <section className="hero">
-          <div className="hero-content">
-            <h2>Leading Licensed Auction House in Saudi Arabia</h2>
-            <p>Specializing in real estate, vehicles, and commercial asset auctions — built on trust, transparency, and excellence.</p>
-            <a href="https://wa.me/966530508091" className="whatsapp-button">Contact us on WhatsApp</a>
-          </div>
-        </section>
-
-        {/* About Section */}
-        <section className="about container">
-          <div className="about-box ar">
+        {/* COMPACT GRID */}
+        <main className="container grid">
+          <section className="block ar">
             <h3>من نحن</h3>
             <p>
-              راية المزادات شركة سعودية مرخّصة متخصصة في تنظيم المزادات العقارية والمنقولات والمركبات والمزادات القضائية. نلتزم بالنزاهة والاحترافية وخدمة جميع العملاء بجودة عالية.
+              شركة سعودية مرخّصة تقدم خدمات المزادات للعقارات والمركبات والمنقولات بأعلى درجات الشفافية.
             </p>
-          </div>
-          <div className="about-box en">
+          </section>
+
+          <section className="block en">
             <h3>About Us</h3>
             <p>
-              Rayat Almazadat is a licensed Saudi auction house offering trusted and compliant auctions across real estate, vehicles, and court-supervised asset liquidation. We serve clients with integrity and excellence.
+              Licensed auction house specializing in real estate, vehicle, and asset sales across Saudi Arabia.
             </p>
-          </div>
-        </section>
+          </section>
 
-        {/* Stats */}
-        <section className="stats container">
-          <div>
-            <h4>25+</h4>
-            <p>Years of Experience</p>
-          </div>
-          <div>
-            <h4>12,000+</h4>
-            <p>Lots Successfully Sold</p>
-          </div>
-          <div>
-            <h4>7 Billion SAR</h4>
-            <p>Total Auctioned Value</p>
-          </div>
-        </section>
+          <section className="block stats">
+            <div>
+              <h4>25+</h4>
+              <p>Years</p>
+            </div>
+            <div>
+              <h4>12K</h4>
+              <p>Lots Sold</p>
+            </div>
+            <div>
+              <h4>7B SAR</h4>
+              <p>Value</p>
+            </div>
+          </section>
 
-        {/* Services */}
-        <section className="services container">
-          <h2>Our Services</h2>
-          <ul>
-            <li>
-              <h4>Real Estate Auctions</h4>
-              <p>Land, residential, and commercial properties across the Kingdom.</p>
-            </li>
-            <li>
-              <h4>Vehicle & Equipment Sales</h4>
-              <p>Fleet vehicles, construction machinery, and movable assets.</p>
-            </li>
-            <li>
-              <h4>Consulting & Valuation</h4>
-              <p>Certified valuation, bankruptcy sales, and court-supervised auctions.</p>
-            </li>
-          </ul>
-        </section>
+          <section className="block cr">
+            <p><strong>شهادة السجل التجاري</strong></p>
+            <p>الرقم الوطني الموحد: 7050707897</p>
+          </section>
 
-        {/* Commercial Registration */}
-        <section className="cr container">
-          <p><strong>شهادة السجل التجاري</strong></p>
-          <p>الرقم الوطني الموحد: 7050707897</p>
-        </section>
+          <section className="block action">
+            <a href="https://wa.me/966530508091">تواصل معنا على واتساب</a>
+          </section>
+        </main>
 
-        {/* Footer */}
+        {/* FOOTER */}
         <footer className="footer">
           <div className="container">
             <p>© 2025 راية المزادات | Rayat Almazadat</p>
-            <p>الدمام، شارع الملك عبدالعزيز · Dammam, KSA</p>
-            <p>+966 530 508 091</p>
+            <p>Dammam · +966 530 508 091</p>
           </div>
         </footer>
       </div>
 
       <style jsx>{`
-        .page {
+        body, html {
+          margin: 0;
           font-family: Tahoma, sans-serif;
           background: #f5f5f5;
           color: #1e1e1e;
         }
+        .page {
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+        }
         .container {
+          width: 90%;
           max-width: 1100px;
           margin: 0 auto;
-          padding: 2rem 1rem;
         }
         .header {
           background: #193c50;
           color: white;
+          padding: 0.5rem 0;
         }
         .header-inner {
           display: flex;
@@ -119,109 +100,78 @@ export default function Home() {
           justify-content: space-between;
         }
         .logo {
-          max-height: 60px;
+          height: 45px;
         }
         .company-name h1 {
           margin: 0;
-          font-size: 1.8rem;
+          font-size: 1.3rem;
         }
         .company-name p {
           margin: 0;
-          font-size: 0.95rem;
-          color: #d3e3ea;
+          font-size: 0.9rem;
+          color: #cbd8df;
         }
-        .hero {
-          background: linear-gradient(to right, #193c50, #0a9396);
-          color: white;
-          text-align: center;
-          padding: 4rem 2rem;
+
+        .grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+          gap: 1rem;
+          padding: 1rem 0.5rem;
         }
-        .hero-content h2 {
-          margin-bottom: 1rem;
-        }
-        .hero-content p {
-          max-width: 600px;
-          margin: 0 auto 2rem;
-        }
-        .whatsapp-button {
-          background: #25d366;
-          color: white;
-          padding: 12px 24px;
-          text-decoration: none;
-          font-weight: bold;
-          border-radius: 6px;
-        }
-        .about {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 2rem;
-          justify-content: space-between;
-        }
-        .about-box {
-          flex: 1 1 48%;
+        .block {
           background: white;
-          padding: 2rem;
-          border-radius: 10px;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+          border-radius: 8px;
+          padding: 1rem;
+          box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+          text-align: center;
         }
-        .about-box h3 {
-          margin-top: 0;
+        .block h3, .block h4 {
+          margin: 0 0 0.5rem;
           color: #193c50;
+        }
+        .block p {
+          margin: 0;
+          font-size: 0.9rem;
         }
         .stats {
           display: flex;
           justify-content: space-around;
-          text-align: center;
-          margin: 3rem 0;
+          gap: 0.5rem;
         }
         .stats div h4 {
+          font-size: 1.3rem;
           margin: 0;
-          font-size: 2rem;
-          color: #193c50;
         }
-        .services ul {
-          list-style: none;
-          padding: 0;
-          display: flex;
-          flex-wrap: wrap;
-          gap: 2rem;
+        .stats div p {
+          margin: 0;
+          font-size: 0.8rem;
         }
-        .services li {
-          background: white;
-          flex: 1 1 30%;
-          padding: 1.5rem;
-          border-radius: 10px;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-        }
-        .services h2 {
-          text-align: center;
-          color: #193c50;
-        }
-        .cr {
-          text-align: center;
-          margin: 2rem 0;
-          background: white;
-          padding: 1rem;
-          border-radius: 8px;
-          box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+        .action a {
+          display: inline-block;
+          margin-top: 0.5rem;
+          padding: 8px 16px;
+          background: #0a9396;
+          color: white;
+          text-decoration: none;
+          border-radius: 6px;
+          font-weight: bold;
         }
         .footer {
           background: #193c50;
           color: white;
           text-align: center;
-          padding: 2rem 1rem;
+          font-size: 0.85rem;
+          padding: 1rem 0.5rem;
+          margin-top: auto;
         }
 
-        @media (max-width: 768px) {
-          .about {
-            flex-direction: column;
+        @media (max-height: 800px) {
+          .block, .header, .footer {
+            padding: 0.5rem !important;
           }
-          .services ul {
-            flex-direction: column;
-          }
-          .stats {
-            flex-direction: column;
-            gap: 1.5rem;
+          .action a {
+            font-size: 0.85rem;
+            padding: 6px 12px;
           }
         }
       `}</style>
